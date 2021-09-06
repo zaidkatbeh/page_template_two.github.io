@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --parts-heading-font:'Raleway', sans-serif;
+    --big-font:'Rubik', sans-serif;
+    --normal-font:'Libre Franklin', sans-serif;
+}
+body{
+    font-family: var(--normal-font);
+    font-size: 30px;
+    /* background-color: black;
+    color: white; */
+}
