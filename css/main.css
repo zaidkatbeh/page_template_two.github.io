@@ -2,15 +2,313 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-transform: capitalize;
 }
 :root{
-    --parts-heading-font:'Raleway', sans-serif;
-    --big-font:'Rubik', sans-serif;
-    --normal-font:'Libre Franklin', sans-serif;
+    --parts_heading-font:'Raleway', sans-serif;
+    --big_font:'Rubik', sans-serif;
+    --normal_font:'Libre Franklin', sans-serif;
 }
 body{
-    font-family: var(--normal-font);
+    /* font-family: var(--normal_font);
     font-size: 30px;
-    /* background-color: black;
-    color: white; */
+    background-color: black;
+    color: white;  */
+    overflow-x: hidden;
+    
 }
+/* -----------------------------starting first part-------------------------------------- */
+    .first{
+        position: relative;
+        height: 609px;
+        background-image: url(../images/landing.jpg);
+        margin-bottom: 80px;
+        z-index: 100;
+    }
+    .first::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #111011a1;
+        z-index: -1;
+        backdrop-filter: blur(1px);
+    }
+        /* ------------------starting nav--------------- */
+        /* logo */
+        .first nav .n_left img{
+            width: 120px;
+            padding-top: -10px;
+            position: absolute;
+            top: 20px;
+        }
+    .first nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 70px;
+        padding-top: 40px;
+        border-bottom: 1px solid white;
+        z-index: 1;
+        
+    }
+    .first nav ul{
+        list-style-type: none;
+        list-style-position: inside;
+        font-family: var(--normal_font);
+        font-size: 14px;
+        color: white;
+    }
+   
+    .first nav ul li{
+        display: inline-block;
+        padding: 0 7.5px;
+        width: fit-content;
+        padding-bottom: 35px;
+        cursor: pointer;
+    }
+    .first nav ul li:nth-child(6){
+        margin-right: 35px;
+    }
+    
+    .first nav ul li:hover{
+        color: #00C7FC;
+        border-bottom: 1px solid #00C7FC;
+        transition-duration: 0.4s;
+    }
+    .first nav ul img{
+        width: 20px;
+        height: 20px;
+        margin-bottom: -5px;
+        border-left: 1.4px solid rgb(255, 255, 255);
+        padding:5px 0px 5px 10px;
+        box-sizing: content-box;
+    }
+    .first nav  .menu {
+        width: 30px;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3 , auto);
+        row-gap: 5px;
+        padding: 0;
+        margin-top: -10px;
+        position: absolute;
+        right: 15%;
+        top: 55px;
+        visibility: hidden;
+    }
+    .first nav  .menu div{
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+
+    /* mobile list */
+    .first .mobile_list{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.459);
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        visibility: hidden;
+        
+    }
+    .first .mobile_list li{
+        padding: 10px 20px;
+        font-family: var(--normal_font);
+    }
+    .first .mobile_list li:first-child{
+        border-bottom: 1px solid #00C7FC;
+    }
+    .first .mobile_list::after{
+        content: "";
+        position: absolute;
+        width: 30px ;
+        height: 24px;
+        top:-64px;
+        right: 18%;
+        z-index: 100;
+        visibility: hidden;
+    }
+    .first .mobile_list:hover{
+        visibility: visible;
+    }
+
+
+
+    /* ------------------end nav--------------- */
+
+    /* -------------starting the content------- */
+    .first .first_content{
+        position: relative;
+    }
+     /* for the arrows */
+    .first .first_content img{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 1%;
+        bottom: 50%;
+        z-index: 100;
+    }
+    .first .first_content img:nth-child(2){
+        left: 0%;
+        bottom: 50%;
+        transform: rotate(180deg) translate(-50%);
+        -webkit-transform: rotate(180deg) translate(-50%);
+        -moz-transform: rotate(180deg) translate(-50%);
+        -ms-transform: rotate(180deg) translate(-50%);
+        -o-transform: rotate(180deg) translate(-50%);
+}
+    .first .first_content .one{
+        color: white;
+        background-color: #08a6d654;
+        margin-top: 40px;
+        padding: 60px;
+        padding-top: 20px;
+        padding-right: 80px;
+        padding-left: 80px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .first .first_content .one h1{
+        font-family: var(--normal_font);
+        line-height: 50px;
+        font-weight: normal;
+        word-spacing: 3px;
+    }
+    .first .first_content .one p{
+        font-family: var(--normal_font);
+        text-transform: none;
+        line-height: 25px;
+    }
+        /* -------------end the content------- */
+
+        /* -------------move from img to img------- */
+
+        .first .move {
+            position: absolute;
+            bottom: 3%;
+            left: 45%;
+            transform: translatey(-50%);
+            -webkit-transform: translatey(-50%);
+            -moz-transform: translatey(-50%);
+            -ms-transform: translatey(-50%);
+            -o-transform: translatey(-50%);
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            
+}
+.first .move div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 5px;
+}
+.first .move div:nth-child(2){
+    background-color: #19C8FA;
+}
+
+/* -----------------------------starting of services-------------------------------------- */
+                    /* -------------starting of services logo------------------ */
+.services{
+}
+.services .logo{
+    position: relative;
+    width: 350px;
+    left: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}
+.services .logo h1{
+    font-family: var(--parts_heading-font);
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+.services .logo h1::before{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background-color: black;
+    bottom: -9%;
+    left: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}
+
+.services .logo h1::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: -13px;
+    left: 50%;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}
+.services .logo h3{
+    margin-top: 40px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 17px;
+    font-family: var(--big_font);
+    color: rgba(0, 0, 0, 0.39);
+}
+/* -------------end of services logo------------------ */
+.services .s_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+.services .s_content>div{
+    width: 40%;
+    position: relative;
+    margin-top: 40px;
+}
+.services .s_content>div h3{
+    font-family: var(--big_font);
+    color: #19C8FA;
+    display: inline-block;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 15px;
+
+}
+.services .s_content>div p{
+    font-family: var(--normal_font);
+    color: rgba(0, 0, 0, 0.678);
+}
+.services .s_content>div img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 14px;
+    
+}
+

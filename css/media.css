@@ -1,0 +1,90 @@
+/* -------------------------phone screen------------------------- */
+@media (min-width:320px) and (max-width:414px){
+    /* ---------media for the list--------------- */
+    .first nav{
+        margin-right: 30px;
+        margin-left: 30px;
+        padding-bottom: 30px;
+    }
+    .first nav ul li{
+        display: none;
+    }
+    
+    .first nav  .menu {
+        visibility: visible;
+        right: 20%;
+        
+    }
+    .first .mobile_list::after{
+        right: 20%;
+        visibility: visible;
+        top: -28px;
+    }
+    .first .first_content img{
+        display: none;
+    }.first_content .one h1{
+        line-height: 30px;
+
+    }
+    .first_content .one p{
+        margin-top: -40px;
+    }
+    .first_content .one{
+        text-overflow: ellipsis;
+
+    }
+    .first .move{
+        bottom: 0%;
+    }
+
+    /* --------media for the services content---- */
+    .services .s_content>div{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }
+    .services .s_content>div img{
+        margin-bottom: 40px;
+        
+    }
+    .services .s_content>div h3{
+        top: 60px;
+        left: 23%;
+    }
+}
+
+@media (min-width:415px) and (max-width:812px){
+    /* ---------media for the list--------------- */
+    .first nav{padding-bottom: 35px;}
+    .first nav ul li{
+    display: none;    
+}
+    .first nav  .menu {
+        visibility: visible;
+        right: 18%;
+    }
+    .first .mobile_list::after{
+        right: 18%;
+        visibility: visible;
+    }
+    .first .first_content img{
+        display: none;
+    }.first_content .one h1{
+        line-height: 30px;
+
+    }
+    /* --------media for the services content---- */
+    .services .s_content>div{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .services .s_content>div h3{}
+
+}
+
+/* ----------------------------computer screen--------------------- */
+@media (min-width:1024px) and (max-width:1050px){
+}
