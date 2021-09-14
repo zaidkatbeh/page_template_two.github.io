@@ -52,6 +52,23 @@
         top: 60px;
         left: 23%;
     }
+    /* --------media for the mobile content---- */
+    .mobile img{
+        display: none;
+    }
+    .mobile{
+        padding-right: 20px;
+        text-align: center;
+        padding-right: 0;
+        text-align: center;
+    }
+    .mobile .content ul li{
+        margin-left: 30px;
+    }
+    .mobile .content h2{
+    display: block;
+    } 
+
 }
 
 @media (min-width:415px) and (max-width:812px){
@@ -80,8 +97,10 @@
         margin-left: 10%;
         margin-right: 10%;
     }
-    
-    .services .s_content>div h3{}
+    /* --------media for the mobile content---- */
+    .mobile img{
+        display: none;
+    }
 
 }
 
