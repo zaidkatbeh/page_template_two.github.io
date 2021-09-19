@@ -14,7 +14,7 @@ body{
     font-size: 30px;
     background-color: black;
     color: white;  */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     
 }
 /* -----------------------------starting first part-------------------------------------- */
@@ -314,7 +314,72 @@ body{
 }
 /* -----------------------------end of services-------------------------------------- */
 
+
+/* -----------------------------start of mobile-------------------------------------- */
+.mobile{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/design-features.jpg);
+    color: white;
+    z-index: -1;
+    overflow-y: hidden;
+    margin-bottom: 60px;
+}
+.mobile::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.514);
+    z-index: -1;
+}
+.mobile img{
+    position: absolute;
+    top: 34%;
+    left: 10%;
+}
+.mobile .content{
+    position: absolute;
+    right: 0;
+    background-color: #08a6d654;
+    padding: 60px;
+    padding-right: 200px;
+}
+.mobile .content h2{
+    font-family: var(--parts_heading-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.mobile .content h2 span{
+    font-family: vra(--big_font);
+    font-weight: bold;
+}
+.mobile .content ul{
+    font-family: var(--normal_font);
+    list-style-type:none;
+    list-style-position: inside;
+}
+.mobile .content ul li {
+    position: relative;
+    margin-bottom: 30px;
+}
+.mobile .content ul li img{
+    width: 60px;
+    height: 60px;
+    display: inline;
+    position: absolute;
+    left: -50px;
+    top: -20px;
+}
+/* -----------------------------end of mobile------------------------------------------- */
+
 /* -----------------------------start of portfolio-------------------------------------- */
+
+
 .portfolio{
     margin-bottom: 60px;
 }
@@ -377,66 +442,94 @@ body{
     font-size: 17px;
     font-family: var(--big_font);
     color: rgba(0, 0, 0, 0.39);
+    margin-bottom: 90px;
 }
-/* -----------------------------end of portfolio-------------------------------------- */
-
-/* -----------------------------start of mobile-------------------------------------- */
-.mobile{
-    position: relative;
-    width: 100%;
-    height: 600px;
-    background-image: url(../images/design-features.jpg);
-    color: white;
-    z-index: -1;
-    overflow-y: hidden;
-}
-.mobile::after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.514);
-    z-index: -1;
-}
-.mobile img{
-    position: absolute;
-    top: 34%;
-    left: 10%;
-}
-.mobile .content{
-    position: absolute;
-    right: 0;
-    background-color: #08a6d654;
-    padding: 60px;
-    padding-right: 200px;
-}
-.mobile .content h2{
-    font-family: var(--parts_heading-font);
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-}
-.mobile .content h2 span{
-    font-family: vra(--big_font);
-    font-weight: bold;
-}
-.mobile .content ul{
-    font-family: var(--normal_font);
+.portfolio ul{
     list-style-type:none;
     list-style-position: inside;
+    font-family: var(--normal_font);
+    font-weight: bold;
+    text-align: center;
 }
-.mobile .content ul li {
+.portfolio ul li{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 3px;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.portfolio ul li:first-child{
+    background-color: #19C8FA;
+    color: white;
+}
+.portfolio ul li:not(:first-child):hover{
+    background-color: #19C8FA;
+    color: white;
+    transition-duration: 0.3s;
+}
+.portfolio .images{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    row-gap: 3px;
+    margin-bottom: 40px;
+}
+.portfolio .images div{
+    overflow: hidden;
     position: relative;
-    margin-bottom: 30px;
 }
-.mobile .content ul li img{
-    width: 60px;
-    height: 60px;
-    display: inline;
+.portfolio .images div::after{
+    content: "awesome image";
     position: absolute;
-    left: -50px;
-    top: -20px;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color: black;
+    bottom:-35%;
+    right: 0;
+    font-family: var(--normal_font);
+    font-weight: bold;
+    text-align: center;
 }
 
+.portfolio .images div:hover::after
+{
+    bottom: 0;
+    transition-duration: 0.5s;
+}
+.portfolio .images div img{
+    width: 100%;
+    position: relative;
+}
+.portfolio .images div img:hover{
+    transform: rotate(5deg) scale(150%);
+    -webkit-transform: rotate(5deg) scale(150%);
+    -moz-transform: rotate(5deg) scale(150%);
+    -ms-transform: rotate(5deg) scale(150%);
+    -o-transform: rotate(5deg) scale(150%);
+    transition-duration: 0.5s;
+}
+.portfolio a{
+    margin-left: 47%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.portfolio  button{
+    padding: 15px;
+    background-color: #19C8FA;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+
+
+
+
+/* -----------------------------end of portfolio-------------------------------------- */

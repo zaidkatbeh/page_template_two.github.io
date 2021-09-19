@@ -68,6 +68,8 @@
     .mobile .content h2{
     display: block;
     } 
+    /* --------media for portfoilio images---- */
+    
 
 }
 
@@ -101,9 +103,18 @@
     .mobile img{
         display: none;
     }
-
+    /* --------media for portfoilio images---- */
+    
 }
 
-/* ----------------------------computer screen--------------------- */
-@media (min-width:1024px) and (max-width:1050px){
+/* ----------------------------costom medieas--------------------- */
+@media (min-width:751px) and (max-width:1022px){
+    .portfolio .images{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:751px){
+    .portfolio .images{
+        grid-template-columns: 1fr
+    }
 }
