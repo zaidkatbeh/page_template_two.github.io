@@ -188,9 +188,9 @@ body{
 
         /* -------------move from img to img------- */
 
-        .first .move {
+        .move {
             position: absolute;
-            bottom: 3%;
+            bottom: 0%;
             left: 45%;
             transform: translatey(-50%);
             -webkit-transform: translatey(-50%);
@@ -200,9 +200,10 @@ body{
             width: fit-content;
             height: fit-content;
             display: flex;
+            z-index: 100;
             
 }
-.first .move div{
+.move div{
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -213,7 +214,7 @@ body{
     border: 1px solid white;
     margin-left: 5px;
 }
-.first .move div:nth-child(2){
+    .move div:nth-child(2){
     background-color: #19C8FA;
 }
 
@@ -593,7 +594,19 @@ body{
 
 /* -----------------------------start of about us-------------------------------------- */
 .about_us{
-
+    position: relative;
+    margin-bottom: 60px;
+}
+.about_us>img{
+    position: absolute;
+    z-index: -1;
+    top: 200px;
+    left: 45%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
 }
 .about_us .logo{
     position: relative;
@@ -658,9 +671,11 @@ body{
 }
 .about_us .content{
     background-image: url("../images/stats.png");
-    padding: 120px 180px;
+    padding: 60px 180px;
     position: relative;
     z-index: -1;
+    margin-top: 300px;
+    height: fit-content;
 }
 .about_us .content::after{
     content: "";
@@ -708,3 +723,55 @@ body{
 .about_us .content div>div p{
     font-size: 20px;
 }
+
+.about_us .content2{
+    display: flex;
+    
+}
+.about_us .content2 .one,
+.about_us .content2 .two
+{
+    width: 50%;
+    font-family: var(--normal_font);
+    margin-left: 100px;
+    padding: 30px;
+}
+.about_us .content2>div div{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.about_us .content2>div div:first-child{
+    flex-direction: column;
+}
+.about_us .content2>div div h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+.about_us .content2>div>div:not(:first-child) p{
+    text-align: left;
+    color: rgb(0, 0, 0);
+    line-height: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+    width: calc(100%-160px);
+    font-weight: bold;
+    margin-left: 40px;
+}
+.about_us .content2>div div span{
+    width: 100%;
+    text-align: right;
+    margin-left: 60%;
+    color: rgba(0, 0, 0, 0.733);
+    font-weight: normal;
+}
+.about_us .content2>div div img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
