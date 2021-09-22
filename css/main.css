@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
+    scroll-behavior: smooth;
 }
 :root{
     --parts_heading-font:'Raleway', sans-serif;
@@ -14,7 +15,8 @@ body{
     font-size: 30px;
     background-color: black;
     color: white;  */
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
+    
     
 }
 /* -----------------------------starting first part-------------------------------------- */
@@ -527,9 +529,182 @@ body{
     color: white;
     border: none;
     text-transform: uppercase;
+    
+}
+/* -----------------------------end of portfolio-------------------------------------- */
+
+/* -----------------------------start of video-------------------------------------- */
+.video{
+    position: relative;
+    margin-bottom:80px;
+}
+.video::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.397);
+    
+}
+.video video{
+    width: 100%;
+    
 }
 
+.video .text{
+    position: absolute;
+    text-align: center;
+    font-family: var(--normal_font);
+    font-weight: bold;
+    background-color: #00c5fc6c;
+    color: white;
+    line-height: 60px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    width: 100%;
+    height: 260px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.video .text h3{
+    font-weight: normal;
+}
+.video .text p{
+    background-color:black;
+    text-transform: capitalize;
+    font-weight: normal;
+    line-height: normal;
+    height: fit-content;
+    cursor: context-menu;
+    width: 160px;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 45%;
+}
 
+/* -----------------------------end of video-------------------------------------- */
 
+/* -----------------------------start of about us-------------------------------------- */
+.about_us{
 
-/* -----------------------------end of portfolio-------------------------------------- */
+}
+.about_us .logo{
+    position: relative;
+    width: 350px;
+    left: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}
+.about_us .logo h1{
+    font-family: var(--parts_heading-font);
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+.about_us .logo h1::before{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background-color: black;
+    bottom: -9%;
+    left: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}
+
+.about_us .logo h1::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: -13px;
+    left: 50%;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}
+.about_us .logo h3{
+    margin-top: 40px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 17px;
+    font-family: var(--big_font);
+    color: rgba(0, 0, 0, 0.39);
+    margin-bottom: 90px;
+}
+.about_us .content{
+    background-image: url("../images/stats.png");
+    padding: 120px 180px;
+    position: relative;
+    z-index: -1;
+}
+.about_us .content::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    
+}
+.about_us .content>div{
+    display: flex;
+    background-color: #135e75d3;
+    justify-content: space-evenly;
+    padding: 80px;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+.about_us .content div>div{
+    width: 25%;
+    color: white;
+    font-family: var(--normal_font);
+    line-height: 60px;
+    text-align: center;
+    
+}
+.about_us .content div>div img{
+    background-color: black;
+    box-sizing: initial;
+    width: 30px;
+    height: 30px;
+    padding: 14px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.about_us .content div>div h1{
+    font-size: 60px;
+    font-family: var(--big_font);
+}
+.about_us .content div>div p{
+    font-size: 20px;
+}

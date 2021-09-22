@@ -67,9 +67,7 @@
     }
     .mobile .content h2{
     display: block;
-    } 
-    /* --------media for portfoilio images---- */
-    
+    }
 
 }
 
@@ -103,7 +101,7 @@
     .mobile img{
         display: none;
     }
-    /* --------media for portfoilio images---- */
+    
     
 }
 
@@ -112,9 +110,23 @@
     .portfolio .images{
         grid-template-columns: repeat(2,1fr);
     }
+    /* --------media for about us---- */
+    .about_us .content div>div{
+        width: 50%;
+    }
+    .about_us .content{
+        padding: 20px;
+    }
 }
 @media (max-width:751px){
     .portfolio .images{
         grid-template-columns: 1fr
+    }
+     /* --------media for about us---- */
+    .about_us .content div>div{
+        width: 100%;
+    }
+    .about_us .content{
+        padding: 20px;
     }
 }
