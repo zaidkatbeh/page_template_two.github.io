@@ -15,7 +15,7 @@ body{
     font-size: 30px;
     background-color: black;
     color: white;  */
-    overflow-x: hidden;
+    overflow-x:hidden;
     
     
 }
@@ -190,8 +190,8 @@ body{
 
         .move {
             position: absolute;
-            bottom: 0%;
-            left: 45%;
+            bottom: 1%;
+            left: 46%;
             transform: translatey(-50%);
             -webkit-transform: translatey(-50%);
             -moz-transform: translatey(-50%);
@@ -584,8 +584,8 @@ body{
     line-height: normal;
     height: fit-content;
     cursor: context-menu;
-    width: 160px;
-    padding: 10px;
+    width: 110px;
+    padding: 3px ;
     font-size: 20px;
     margin-left: 45%;
 }
@@ -600,8 +600,9 @@ body{
 .about_us>img{
     position: absolute;
     z-index: -1;
-    top: 200px;
+    top: 250px;
     left: 45%;
+    width: 60%;
     transform: translate(-50%);
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
@@ -720,10 +721,6 @@ body{
     font-size: 60px;
     font-family: var(--big_font);
 }
-.about_us .content div>div p{
-    font-size: 20px;
-}
-
 .about_us .content2{
     display: flex;
     
@@ -733,8 +730,7 @@ body{
 {
     width: 50%;
     font-family: var(--normal_font);
-    margin-left: 100px;
-    padding: 30px;
+    padding: 60px;
 }
 .about_us .content2>div div{
     display: flex;
@@ -751,17 +747,22 @@ body{
 }
 .about_us .content2>div>div:not(:first-child) p{
     text-align: left;
-    color: rgb(0, 0, 0);
+    color: black;
     line-height: 30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.363);
     width: calc(100%-160px);
-    font-weight: bold;
     margin-left: 40px;
+}
+.about_us .content2>div>div:first-child p{
+    text-align: center;
+    line-height: 30px;
+    font-family: var(--normal_font);
+    color: rgba(0, 0, 0, 0.788);
 }
 .about_us .content2>div div span{
     width: 100%;
     text-align: right;
-    margin-left: 60%;
+    margin-left: 70%;
     color: rgba(0, 0, 0, 0.733);
     font-weight: normal;
 }

@@ -33,8 +33,9 @@
         text-overflow: ellipsis;
 
     }
-    .first .move{
-        bottom: 0%;
+    .move{
+        bottom: 3%;
+        left: 36%;
     }
 
     /* --------media for the services content---- */
@@ -67,6 +68,9 @@
     }
     .mobile .content h2{
     display: block;
+    }
+    .video .text p{
+    margin-left: 32% !important;
     }
 
 }
@@ -117,6 +121,9 @@
     .about_us .content{
         padding: 20px;
     }
+    .video .text p{
+        margin-left: 43%;
+    }
 }
 @media (max-width:751px){
     .portfolio .images{
@@ -128,5 +135,8 @@
     }
     .about_us .content{
         padding: 20px;
+    }
+    .video .text p{
+        margin-left: 37%;
     }
 }
