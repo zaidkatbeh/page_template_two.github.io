@@ -4,6 +4,8 @@
     box-sizing: border-box;
     text-transform: capitalize;
     scroll-behavior: smooth;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 :root{
     --parts_heading-font:'Raleway', sans-serif;
@@ -201,7 +203,6 @@ body{
             height: fit-content;
             display: flex;
             z-index: 100;
-            
 }
 .move div{
     width: 20px;
@@ -600,7 +601,7 @@ body{
 .about_us>img{
     position: absolute;
     z-index: -1;
-    top: 250px;
+    top: 200px;
     left: 45%;
     width: 60%;
     transform: translate(-50%);
@@ -675,7 +676,7 @@ body{
     padding: 60px 180px;
     position: relative;
     z-index: -1;
-    margin-top: 300px;
+    margin-top: 250px;
     height: fit-content;
 }
 .about_us .content::after{
@@ -745,7 +746,7 @@ body{
     text-transform: uppercase;
     text-align: center;
 }
-.about_us .content2>div>div:not(:first-child) p{
+.about_us .content2>.one>div:not(:first-child) p{
     text-align: left;
     color: black;
     line-height: 30px;
@@ -774,5 +775,286 @@ body{
     -o-border-radius: 50%;
     width: 100px;
     height: 100px;
+}
+.about_us .content2 .two .score{
+    display: flex;
+    flex-direction: column;
+}
+.about_us .content2 .two .score div{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+.about_us .content2 .two .score  p{
+    margin-top: 10px;
+    font-weight: 600;
+}
+.about_us .content2 .two .score div::before,
+.about_us .content2 .two .score div::after{
+    position: absolute;
+    top: -30px;
+    content: "";
+    left: 90%;
+    
+}
+.about_us .content2 .two .score div::after{
+    padding: 3px;
+    top: -40px;
+    left: 85.5%;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.about_us .content2 .two .score .ADOBE{
+    background-image: linear-gradient(
+        to right,
+        #19C8FA 90%,
+        #DEDADC 90%
+    );
+}
+.about_us .content2 .two .score .ADOBE::before{
+    width: 0;
+    height: 0;
+    border: 8px solid;
+    border-color: black transparent transparent transparent;
+    top: -15px;
+    left: 88%;
+}
+.about_us .content2 .two .score div::after{
+    content: "90%";
+}
+.about_us .content2 .two .score .HTMLCSS{
+    background-image: linear-gradient(
+        to right,
+        #19C8FA 85%,
+        #DEDADC 85%
+    );
+}
+.about_us .content2 .two .score .HTMLCSS::before{
+    width: 0;
+    height: 0;
+    border: 8px solid;
+    border-color: black transparent transparent transparent;
+    top: -15px;
+    left: 83%;
+}
+.about_us .content2 .two .score .HTMLCSS::after{
+    content: "90%";
+    left: 80.5%;
+}
+.about_us .content2 .two .score .JAVASCRIPT{
+    background-image: linear-gradient(
+        to right,
+        #19C8FA 80%,
+        #DEDADC 80%
+    );
+}
+.about_us .content2 .two .score .JAVASCRIPT::before{
+    width: 0;
+    height: 0;
+    border: 8px solid;
+    border-color: black transparent transparent transparent;
+    top: -15px;
+    left: 78%;
+}
+.about_us .content2 .two .score .JAVASCRIPT::after{
+    content: "90%";
+    left: 75.5%;
+}
+.about_us .content2 .two .score .PHP{
+    background-image: linear-gradient(
+        to right,
+        #19C8FA 90%,
+        #DEDADC 90%
+    );
+}
+.about_us .content2 .two .score .PHP::before{
+    width: 0;
+    height: 0;
+    border: 8px solid;
+    border-color: black transparent transparent transparent;
+    top: -15px;
+    left: 88%;
+}
+.about_us .content2 .two .score .PHP::after{
+    content: "90%";
+}
+        /* -- -----------------------end of about us------------------
+
+        -- -----------------------start of quoto------------------ */
+    .quoto{
+        background-image: url(../images/quote.jpg);
+        padding: 100px 60px;
+        position: relative;
+        z-index: -1;
+        text-align: center;
+        color: white;
+        margin-bottom: 80px;
+    }
+    .quoto::before{
+        position: absolute;
+        content: "";
+        background-color: rgba(0, 0, 0, 0.767);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        
+    }
+    .quoto q{
+        text-transform: none;
+        font-size: 35px;
+        font-family: var(--big_font);
+    }
+    .quoto p{
+        font-family: var(--normal_font);
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    /* -- -----------------------end of quoto------------------
+
+        -- -----------------------start of pricing------------------ */
+    .pricing{
+        margin-bottom: 60px;
+    }
+    .pricing .logo{
+        position: relative;
+        width: 350px;
+        left: 50%;
+        transform: translatex(-50%);
+        -webkit-transform: translatex(-50%);
+        -moz-transform: translatex(-50%);
+        -ms-transform: translatex(-50%);
+        -o-transform: translatex(-50%);
+    }
+    .pricing .logo h1{
+        font-family: var(--parts_heading-font);
+        font-weight: normal;
+        font-size: 40px;
+        text-align: center;
+        position: relative;
+    }
+    .pricing .logo h1::before{
+        content: "";
+        position: absolute;
+        width: 130px;
+        height: 2px;
+        background-color: black;
+        bottom: -9%;
+        left: 50%;
+        transform: translatex(-50%);
+        -webkit-transform: translatex(-50%);
+        -moz-transform: translatex(-50%);
+        -ms-transform: translatex(-50%);
+        -o-transform: translatex(-50%);
+    }
+    
+    .pricing .logo h1::after{
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        bottom: -13px;
+        left: 50%;
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transform: translatex(-50%);
+        -webkit-transform: translatex(-50%);
+        -moz-transform: translatex(-50%);
+        -ms-transform: translatex(-50%);
+        -o-transform: translatex(-50%);
+    }
+    .pricing .logo h3{
+        margin-top: 40px;
+        font-weight: 100;
+        text-align: center;
+        font-size: 17px;
+        font-family: var(--big_font);
+        color: rgba(0, 0, 0, 0.548);
+    }
+
+    .pricing .prices{
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .pricing .prices div{
+        width: calc(88%/4);
+    }
+    .pricing .prices .price{
+        padding: 30px;
+        border: 1px solid #00C7FC;
+        border-color: #00C7FC transparent;
+        width: 100%;
+        text-align: center;
+        background-color: #FCFCFC;
+    }
+    .pricing .prices .price h2{
+        font-family: var(--normal_font);
+        text-transform: uppercase;
+
+    }
+    .pricing .prices .price p{
+        margin-top: 10px;
+        font-size: 60px;
+        font-family: var(--big_font);
+        font-weight: bold;
+    }
+    .pricing .prices .price p sub,
+    .pricing .prices .price p sup{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .pricing .prices .feature{
+        width: 100%;
+        padding: 0px 50px;
+        text-align: center;
+        text-transform: capitalize;
+        border-bottom: 1px solid #00C7FC;
+    }
+    .pricing .prices .feature ul{
+        list-style-type: none;
+        list-style-position: inside;
+    }
+    .pricing .prices .feature ul li{
+        font-family: var(--normal_font);
+        font-size: 17px;
+        padding: 25px 0px;
+        border-bottom: 2px solid #00C7FC;
+    }
+    .pricing .prices .feature ul li:last-child{
+        border-bottom: none;
+    }
+    .pricing .prices .buy_now{
+        padding: 30px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .pricing .prices .buy_now p{
+        padding: 16px;
+        width: 140px;
+        font-size: 20px;
+        border: 1px solid #00C7FC;
+        color: #551A8B;
+        font-family: var(--normal_font);
+        cursor: pointer;
+        margin-left: 50%;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
 }
 

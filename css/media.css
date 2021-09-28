@@ -18,7 +18,7 @@
     .first .mobile_list::after{
         right: 20%;
         visibility: visible;
-        top: -28px;
+        top: -55px;
     }
     .first .first_content img{
         display: none;
@@ -72,7 +72,40 @@
     .video .text p{
     margin-left: 32% !important;
     }
-
+    .about_us .content{
+        margin-top: 130px;
+    }
+    .about_us .content2{
+        flex-direction: column;
+    }
+    .about_us .content2 *{
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .about_us .content2 .one{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        
+    }
+    .about_us .content2 .one img{
+        margin-left: 50%;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+}
+    .about_us .content2>div div span{
+        margin-left: 63%;
+    }
+    .about_us .content2 .two {
+        width: 100%;
+    }
+    .pricing .prices div{
+        width: 100%;
+    }
 }
 
 @media (min-width:415px) and (max-width:812px){
@@ -105,8 +138,15 @@
     .mobile img{
         display: none;
     }
-    
-    
+    .about_us .content{
+        margin-top: 180px;
+    }
+    .about_us .content2{
+        flex-direction: column;
+    }
+    .pricing .prices div{
+        width: calc(94%/2);
+    }
 }
 
 /* ----------------------------costom medieas--------------------- */
@@ -124,6 +164,16 @@
     .video .text p{
         margin-left: 43%;
     }
+    .about_us .content2 .one,
+    .about_us .content2 .two {
+        width: 100%;
+    }
+    .about_us .content2  {
+        flex-wrap: wrap;
+    }
+    .pricing .prices div{
+        width: calc(91%/3);
+    }
 }
 @media (max-width:751px){
     .portfolio .images{
@@ -138,5 +188,9 @@
     }
     .video .text p{
         margin-left: 37%;
+    }
+    .about_us .content2 .one,
+    .about_us .content2 .two {
+        width: 100%;
     }
 }
