@@ -106,6 +106,13 @@
     .pricing .prices div{
         width: 100%;
     }
+    .contact_us .content .second_part{
+        grid-row: 1/2;
+        text-align: center;
+    }
+    .contact_us .content{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (min-width:415px) and (max-width:812px){
@@ -146,6 +153,13 @@
     }
     .pricing .prices div{
         width: calc(94%/2);
+    }
+    .contact_us .content .second_part{
+        grid-row: 1/2;
+        text-align: center;
+    }
+    .contact_us .content{
+        grid-template-columns: 1fr;
     }
 }
 

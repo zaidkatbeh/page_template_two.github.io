@@ -7,6 +7,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+a{
+    text-decoration: none;
+}
 :root{
     --parts_heading-font:'Raleway', sans-serif;
     --big_font:'Rubik', sans-serif;
@@ -1057,4 +1060,283 @@ body{
         -ms-transform: translate(-50%);
         -o-transform: translate(-50%);
 }
+.pricing .contact{
+    text-align: center;
+    width: 100%;
+}
+.pricing .contact h2{
+    font-family: var(--parts_heading-font);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pricing .contact h3{
+    font-family: var(--normal_font);
+    text-align: center;
+    background-color: #19C8FA;
+    color: white;
+    width: 140px;
+    padding: 16px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
 
+        /* -- -----------------------end of pricing------------------
+
+        -- -----------------------start of subscribe------------------ */
+    .subscribe{
+        margin-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url(../images/subscribe.jpg);
+        color: white;
+        padding: 80px 60px;
+        text-align: center;
+        position: relative;
+        z-index: -1;
+    }
+    .subscribe::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.418);
+        z-index: -1;
+    }
+    .subscribe div{
+        border: 2px solid white;
+        display: flex;
+        height: 63px;
+        padding-left: 20px;
+    }
+    .subscribe div img{
+        width: 30px;
+    }
+    .subscribe div input {
+        background-color: transparent;
+        color: white;
+        border: none;
+        margin-left: 20px;
+        width: 227px;
+        font-family: var(--normal_font);
+        font-size: 20px;
+        text-transform: none;
+    }
+    .subscribe div input:focus-visible{
+        border: none;
+        outline: none;
+    }
+    .subscribe div input::placeholder{
+        color: white; 
+    }
+    .subscribe div button{
+        font-family: var(--parts_heading-font);
+        background-color: #19C8FA;
+        color: white;
+        border: none;
+        font-size: 20px;
+        width: 137px;
+    }
+    .subscribe p{
+        font-family: var(--normal_font);
+        font-size: 20px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+
+        /* -- -----------------------end of subscribe------------------
+
+        -- -----------------------start of contact us------------------ */
+        .contact_us{
+            margin-bottom: 80px;
+        }
+        .contact_us .logo{
+            position: relative;
+            width: 350px;
+            left: 50%;
+            transform: translatex(-50%);
+            -webkit-transform: translatex(-50%);
+            -moz-transform: translatex(-50%);
+            -ms-transform: translatex(-50%);
+            -o-transform: translatex(-50%);
+        }
+        .contact_us .logo h1{
+            font-family: var(--parts_heading-font);
+            font-weight: normal;
+            font-size: 40px;
+            text-align: center;
+            position: relative;
+        }
+        .contact_us .logo h1::before{
+            content: "";
+            position: absolute;
+            width: 130px;
+            height: 2px;
+            background-color: black;
+            bottom: -9%;
+            left: 50%;
+            transform: translatex(-50%);
+            -webkit-transform: translatex(-50%);
+            -moz-transform: translatex(-50%);
+            -ms-transform: translatex(-50%);
+            -o-transform: translatex(-50%);
+        }
+        
+        .contact_us .logo h1::after{
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            bottom: -13px;
+            left: 50%;
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            transform: translatex(-50%);
+            -webkit-transform: translatex(-50%);
+            -moz-transform: translatex(-50%);
+            -ms-transform: translatex(-50%);
+            -o-transform: translatex(-50%);
+        }
+        .contact_us .logo h3{
+            margin-top: 40px;
+            font-weight: 100;
+            text-align: center;
+            font-size: 17px;
+            font-family: var(--big_font);
+            color: rgba(0, 0, 0, 0.548);
+        }
+        .contact_us .content{
+            display: grid;
+            grid-template-columns: 60% 30%;
+            column-gap: 5%;
+            margin-top: 100px;
+            padding: 0 2.5%;
+            margin-bottom: 100px;
+        }
+        .contact_us .content .first_part {
+            position: relative;
+        }
+        .contact_us .content .first_part input
+        {
+            width: 100%;
+            display: block;
+            height: 60px;
+            margin-bottom: 35px;
+            border: 1px solid rgb(179, 177, 177);
+            outline: none;
+            font-family: var(--big_font);
+            font-size: 20px;
+            color: black;
+            padding: 0px 20px;
+        }
+        .contact_us .content .first_part textarea{
+            width: 100%;
+            border: 1px solid rgb(179, 177, 177);
+            outline: none;
+            font-family: var(--big_font);
+            font-size: 20px;
+            color: black;
+            padding: 0px 20px;
+            margin-bottom: 10px;
+        }
+        .contact_us .content .first_part .send{
+            color: white;
+            background-color: #19C8FA;
+            width: 170px;
+            border: none;
+            outline: none;
+            position:absolute;
+            right: 0;
+        }
+        .contact_us .content .second_part{
+            text-align: left;
+            font-family: var(--normal_font);
+            font-weight: normal;
+        }
+        .contact_us .content .second_part h2{
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .contact_us .content .second_part h2:last-of-type{
+            margin-bottom: 50px;
+        }
+        .contact_us .content .second_part p{
+            margin-bottom: 20px;
+            color: rgba(0, 0, 0, 0.725);
+        }
+        .contact_us .content .second_part p:nth-of-type(2){
+            margin-bottom:70px ;
+        }
+        .contact_us .content .second_part p:last-of-type{
+            text-transform: uppercase;
+        }
+
+        /* -- -----------------------end of contact us------------------ */
+
+        /* -- -----------------------start of footer------------------ */
+        footer{
+            position: relative;
+            background-image: url(../images/subscribe.jpg);
+            z-index: -1;
+            text-align: center;
+            padding: 60px 0;
+        }
+        footer::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.750);
+            z-index: -1;
+        }
+        footer *:not(::before){
+            z-index: 100;
+        }
+        footer .logo{
+            margin-bottom: 40px;
+        }
+        footer h2{
+            font-family: var(--normal_font);
+            color: white;
+            padding:  0 20px 20px 20px;
+            border-bottom: 1px solid white;
+            width: fit-content;
+            margin-left: 50%;
+            transform: translate(-50%);
+            -webkit-transform: translate(-50%);
+            -moz-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+            -o-transform: translate(-50%);
+        }
+        footer .links{
+            margin-bottom: 60px;
+        }
+        footer .links img{
+            width: 20px;
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+        footer p{
+            color: white;
+            font-family: var(--big_font);
+            font-size: 20px;
+            
+        }
+        footer p span{
+            color: #19C8FA;
+        }
+        /* -- -----------------------end of footer------------------ */
+        /* -- -----------------------end of the page------------------ */
