@@ -34,7 +34,7 @@
 
     }
     .move{
-        bottom: 3%;
+        bottom: 11%;
         left: 36%;
     }
 
@@ -116,6 +116,12 @@
 }
 
 @media (min-width:415px) and (max-width:812px){
+    .subscribe div input {
+        width: 101px;
+    }
+    .subscribe div{
+        height: 50px;}
+
     /* ---------media for the list--------------- */
     .first nav{padding-bottom: 35px;}
     .first nav ul li{
@@ -207,4 +213,28 @@
     .about_us .content2 .two {
         width: 100%;
     }
+    .subscribe div input {
+        width: 101px;
+    }
+    .subscribe div{
+        height: 50px;
+    }
+    .subscribe{
+        padding: 80px 30px;
+    }
+    .video .text{
+        padding: 10px;
+        line-height: 27px;
+    }
+    .first .first_content .one{
+        padding: 10px;
+    }
+    .move{
+        bottom: 11%;
+        left: 36%;
+    }
+    .mobile .content{
+        padding: 13px;
+    }
+
 }
